@@ -66,7 +66,7 @@ window.addEventListener('DOMContentLoaded', event => {
             message : message.value 
         }
             console.log(dataToSend);
-            await fetch('http://localhost:5000/api/contact/mail',{
+            await fetch('https://portfolio-4s6v.onrender.com/api/contact/mail',{
             method:'POST',
             headers: {
                     'Accept': 'application/json', 

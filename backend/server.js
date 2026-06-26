@@ -1,5 +1,8 @@
 const http = require('http')
 const app = require('./app')
+const dns = require("dns");
+
+dns.setDefaultResultOrder("ipv4first");
 
 const normalizePort = val => {
     const port = parseInt(val, 10);

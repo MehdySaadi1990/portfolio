@@ -1,676 +1,254 @@
 <!DOCTYPE html>
-<html lang="en">
-    <head>
-        <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-        <meta name="description" content="" />
-        <meta name="author" content="" />
-        <title>Freelancer - Start Bootstrap Theme</title>
-        <!-- Favicon-->
-        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
-        <!-- Font Awesome icons (free version)-->
-        <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
-        <!-- Google fonts-->
-        <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />
-        <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css" />
-        <!-- Core theme CSS (includes Bootstrap)-->
-        <link href="css/styles.css" rel="stylesheet" />
-    </head>
-    <body id="page-top">
-        <!-- Navigation-->
-        <nav class="navbar navbar-expand-lg bg-secondary text-uppercase fixed-top" id="mainNav">
-            <div class="container">
-                <a class="navbar-brand" href="#page-top">SAADI Mehdy</a>
-                <button class="navbar-toggler text-uppercase font-weight-bold bg-primary text-white rounded" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-                    Menu
-                    <i class="fas fa-bars"></i>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarResponsive">
-                    <ul class="navbar-nav ms-auto">
-                        <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#portfolio">Portfolio</a></li>
-                        <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#about">About</a></li>
-                        <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#contact">Contact</a></li>
-                    </ul>
-                </div>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfolio SAADI Mehdy</title>
+  <link rel="stylesheet" href="styles.css" />
+  <script src="https://kit.fontawesome.com/1aed871504.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <div class="page-overlay"></div>
+  <main class="container" id="main-content">
+    <header class="topbar" id="topbar">
+      <div class="logo">SAADI MEHDY <br>
+         FULL STACK DEVELOPPEUR</div>
+      <button class="menu-toggle" aria-expanded="false" aria-label="Ouvrir le menu"></button>
+      <nav class="nav" aria-label="Navigation du portfolio">
+        <button class="nav-btn" data-target="about">À propos</button>
+        <button class="nav-btn" data-target="skills">Compétences</button>
+        <button class="nav-btn" data-target="projects">Projets</button>
+        <button class="nav-btn" data-target="contact">Contact</button>
+      </nav>
+    </header>
+    <section class="hero" id="hero">
+      <div class="hero-content">
+        <div class="hero-grid">
+          <div class="hero-photo">
+            <img class="profile-image" src="/assets/img/photo_med.png" alt="">
+          </div>
+          <div class="hero-copy">
+            <h1 class="title1">Je transforme</h1>
+            <h1 class="title2">vos idées en réalité</h1>
+            <p>Portfolio d'un développeur web Full Stack spécialisé en applications modernes avec des animations fluides, un développement responsive et des fonctionnalités basées sur vos besoins</p>
+            <div class="hero-actions">
+              <button class="btn primary action-btn" data-target="projects">Voir mes projets</button>
+              <button class="btn action-btn" data-target="contact">Me contacter</button>
             </div>
-        </nav>
-        <!-- Masthead-->
-        <header class="masthead bg-primary text-secondary text-center">
-            <div class="container d-flex align-items-center flex-column">
-                <!-- Masthead Avatar Image-->
-                <img class="masthead-avatar mb-5 rounded-circle" src="assets/img/photo.png" alt="..." />
-                <!-- Masthead Heading-->
-                <h1 class="masthead-heading text-uppercase mb-0">Construisez vos idées sans limites</h1>
-                <!-- Icon Divider-->
-                <div class="divider-custom divider-light">
-                    <div class="divider-custom-line"></div>
-                    <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
-                    <div class="divider-custom-line"></div>
-                </div>
-                <!-- Masthead Subheading-->
-                <p class="masthead-subheading font-weight-light mb-0 ">Développeur Intégrateur Web</p>
-            </div>
-        </header>
-        <!-- Portfolio Section 1-->
-        <section class="page-section portfolio" id="portfolio">
-            <div class="container">
-                <!-- Portfolio Section Heading-->
-                <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">Projets</h2>
-                <!-- Icon Divider-->
-                <div class="divider-custom">
-                    <div class="divider-custom-line"></div>
-                    <div class="divider-custom-icon"><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
-                    <div class="divider-custom-line"></div>
-                </div>
-                <!-- Portfolio Grid Items-->
-                <div class="row justify-content-center">
-                    <!-- Portfolio Item 1-->
-                    <div class="col-md-6 col-lg-4 mb-5">
-                        <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal1">
-                            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-                                <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
-                            </div>
-                            <img class="img-fluid" src="assets/img/portfolio/animalis.png" alt="..." />
-                        </div>
-                    </div>
-                    <!-- Portfolio Item 2-->
-                    <div class="col-md-6 col-lg-4 mb-5">
-                        <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal2">
-                            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-                                <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
-                            </div>
-                            <img class="img-fluid" src="assets/img/portfolio/lumiled.png" alt="..." />
-                        </div>
-                    </div>
-                    <!-- Portfolio Item 3-->
-                    <div class="col-md-6 col-lg-4 mb-5">
-                        <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal3">
-                            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-                                <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
-                            </div>
-                            <img class="img-fluid" src="assets/img/portfolio/bey.png" alt="..." />
-                        </div>
-                    </div>
-                    <!-- Portfolio Item 4-->
-                    <div class="col-md-6 col-lg-4 mb-5 mb-lg-0">
-                        <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal4">
-                            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-                                <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
-                            </div>
-                            <img class="img-fluid" src="assets/img/portfolio/appBudget.png" alt="..." />
-                        </div>
-                    </div>
-                    <!-- Portfolio Item 5-->
-                    <div class="col-md-6 col-lg-4 mb-5 mb-md-0">
-                        <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal5">
-                            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-                                <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
-                            </div>
-                            <img class="img-fluid" src="assets/img/portfolio/gestApp.png" alt="..." />
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- Portfolio Section 2-->
-        <section class="page-section portfolio" id="portfolio">
-            <div class="container">
-                <!-- Portfolio Section Heading-->
-                <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">Apprentissage</h2>
-                <!-- Icon Divider-->
-                <div class="divider-custom">
-                    <div class="divider-custom-line"></div>
-                    <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
-                    <div class="divider-custom-line"></div>
-                </div>
-                <!-- Portfolio Grid Items-->
-                <div class="row justify-content-center">
-                    <!-- Portfolio Item 1-->
-                    <div class="col-md-6 col-lg-4 mb-5">
-                        <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal6">
-                            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-                                <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
-                            </div>
-                            <img class="img-fluid" src="assets/img/portfolio/Booki.png" alt="..." />
-                        </div>
-                    </div>
-                    <!-- Portfolio Item 2-->
-                    <div class="col-md-6 col-lg-4 mb-5">
-                        <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal7">
-                            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-                                <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
-                            </div>
-                            <img class="img-fluid" src="assets/img/portfolio/OhmyFood.png" alt="..." />
-                        </div>
-                    </div>
-                    <!-- Portfolio Item 3-->
-                    <div class="col-md-6 col-lg-4 mb-5">
-                        <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal8">
-                            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-                                <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
-                            </div>
-                            <img class="img-fluid" src="assets/img/portfolio/LaPanthere.png" alt="..." />
-                        </div>
-                    </div>
-                    <!-- Portfolio Item 4-->
-                    <div class="col-md-6 col-lg-4 mb-5 mb-lg-0">
-                        <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal9">
-                            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-                                <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
-                            </div>
-                            <img class="img-fluid" src="assets/img/portfolio/kanap.png" alt="..." />
-                        </div>
-                    </div>
-                    <!-- Portfolio Item 5-->
-                    <div class="col-md-6 col-lg-4 mb-5 mb-md-0">
-                        <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal10">
-                            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-                                <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
-                            </div>
-                            <img class="img-fluid" src="assets/img/portfolio/Piiquante.png" alt="..." />
-                        </div>
-                    </div>
-                    <!-- Portfolio Item 6-->
-                    <div class="col-md-6 col-lg-4">
-                        <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal11">
-                            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-                                <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
-                            </div>
-                            <img class="img-fluid" src="assets/img/portfolio/kasa.png" alt="..." />
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- About Section-->
-        <section class="page-section bg-primary text-secondary mb-0" id="about">
-            <div class="container">
-                <!-- About Section Heading-->
-                <h2 class="page-section-heading text-center text-uppercase text-secondary">Qui suis-je?</h2>
-                <!-- Icon Divider-->
-                <div class="divider-custom divider-light">
-                    <div class="divider-custom-line"></div>
-                    <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
-                    <div class="divider-custom-line"></div>
-                </div>
-                <!-- About Section Content-->
-                <div class="row">
-                    <div class="row-lg-4 ms-auto text-center"><p class="lead">Développeur web passionné, formé à la stack MERN et fort d'une expérience entrepreneuriale internationale, je cherche une alternance Développeur Fullstack pour approfondir mes compétences et contribuer activement à des projets ambitieux.</p></div>
-                    <div class="row-lg-4 me-auto text-center"><p class="lead">Vous pouvez retrouvez mon CV qui retrace tout mon parcours professionnel en cliquant sur le bouton ci-dessous</p></div>
-                </div>
-                <!-- About Section Button-->
-                <div class="text-center mt-4">
-                    <a class="btn btn-xl btn-outline-light" href="assets/cv/CV_MEHDY_SAADI-OP.pdf" download="CV_MEHDY_SAADI-OP.pdf">
-                        <i class="fas fa-download me-2"></i>
-                        Télécharger le CV
-                    </a>
-                </div>
-            </div>
-        </section>
-        <!-- Contact Section-->
-        <section class="page-section" id="contact">
-            <div class="container">
-                <!-- Contact Section Heading-->
-                <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">Me contacter</h2>
-                <!-- Icon Divider-->
-                <div class="divider-custom">
-                    <div class="divider-custom-line"></div>
-                    <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
-                    <div class="divider-custom-line"></div>
-                </div>
-                <!-- Contact Section Form-->
-                <div class="row justify-content-center">
-                    <div class="col-lg-8 col-xl-7">
-                        <!-- * * * * * * * * * * * * * * *-->
-                        <!-- * * SB Forms Contact Form * *-->
-                        <!-- * * * * * * * * * * * * * * *-->
-                        <!-- This form is pre-integrated with SB Forms.-->
-                        <!-- To make this form functional, sign up at-->
-                        <!-- https://startbootstrap.com/solution/contact-forms-->
-                        <!-- to get an API token!-->
-                        <form id="contactForm">
-                            <!-- Name input-->
-                            <div class="form-floating mb-3">
-                                <input class="form-control" id="name" type="text" placeholder="Enter your name..." data-sb-validations="required" />
-                                <label for="name">Nom et prénom</label>
-                                <div class="invalid-feedback" data-sb-feedback="name:required">A name is required.</div>
-                            </div>
-                            <!-- Email address input-->
-                            <div class="form-floating mb-3">
-                                <input class="form-control" id="email" type="email" placeholder="name@example.com" data-sb-validations="required,email" />
-                                <label for="email">Email</label>
-                                <div class="invalid-feedback" data-sb-feedback="email:required">An email is required.</div>
-                                <div class="invalid-feedback" data-sb-feedback="email:email">Email is not valid.</div>
-                            </div>
-                            <!-- Phone number input-->
-                            <div class="form-floating mb-3">
-                                <input class="form-control" id="phone" type="tel" placeholder="(123) 456-7890" data-sb-validations="required" />
-                                <label for="phone">Téléphone</label>
-                                <div class="invalid-feedback" data-sb-feedback="phone:required">A phone number is required.</div>
-                            </div>
-                            <!-- Message input-->
-                            <div class="form-floating mb-3">
-                                <textarea class="form-control" id="message" type="text" placeholder="Enter your message here..." style="height: 10rem" data-sb-validations="required"></textarea>
-                                <label for="message">Message</label>
-                                <div class="invalid-feedback" data-sb-feedback="message:required">A message is required.</div>
-                            </div>
-                            <!-- Submit success message-->
-                            <!---->
-                            <!-- This is what your users will see when the form-->
-                            <!-- has successfully submitted-->
-                            <div class="d-none" id="submitSuccessMessage">
-                                <div class="text-center mb-3">
-                                    <div class="fw-bolder">Form submission successful!</div>
-                                </div>
-                            </div>
-                            <!-- Submit error message-->
-                            <!---->
-                            <!-- This is what your users will see when there is-->
-                            <!-- an error submitting the form-->
-                            <div class="d-none" id="submitErrorMessage"><div class="text-center text-danger mb-3">Error sending message!</div></div>
-                            <!-- Submit Button-->
-                            <button class="btn btn-primary btn-xl" disabled id="submitButton" type="submit">Envoyer</button>
-                        </form>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- Footer-->
-        <footer class="footer text-center">
-            <div class="container">
-                <div class="row">
-                    <!-- Footer Location-->
-                    <div class="col-lg-4 mb-5 mb-lg-0">
-                        <h4 class="text-uppercase mb-4">Adresse</h4>
-                        <p class="lead mb-0">
-                            3 rue du fossé de l'aumône
-                            <br />
-                            92600 Asnières-sur-Seine
-                        </p>
-                    </div>
-                    <!-- Footer Social Icons-->
-                    <div class="col-lg-4 mb-5 mb-lg-0">
-                        <h4 class="text-uppercase mb-4">Mes réseaux</h4>
-                        <a class="btn btn-outline-light btn-social mx-1" href="https://www.facebook.com/mehdy.saadi.2025"><i class="fab fa-fw fa-facebook-f"></i></a>
-                        <a class="btn btn-outline-light btn-social mx-1" href="https://www.linkedin.com/in/mehdy-saadi-a87724177"><i class="fab fa-fw fa-linkedin-in"></i></a>
-                    </div>
-                    <!-- Footer About Text-->
-                    <div class="col-lg-4">
-                        <h4 class="text-uppercase mb-4">About Freelancer</h4>
-                        <p class="lead mb-0">
-                            Freelance is a free to use, MIT licensed Bootstrap theme created by
-                            <a href="http://startbootstrap.com">Start Bootstrap</a>
-                            .
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </footer>
-        <!-- Copyright Section-->
-        <div class="copyright py-4 text-center text-white">
-            <div class="container"><small>Copyright &copy; Your Website 2023</small></div>
+          </div>
         </div>
-        <!-- Portfolio Modals-->
-        <!-- Portfolio Modal 1-->
-        <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" aria-labelledby="portfolioModal1" aria-hidden="true">
-            <div class="modal-dialog modal-xl">
-                <div class="modal-content">
-                    <div class="modal-header border-0"><button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button></div>
-                    <div class="modal-body text-center pb-5">
-                        <div class="container">
-                            <div class="row justify-content-center">
-                                <div class="col-lg-8">
-                                    <!-- Portfolio Modal - Title-->
-                                    <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">Animalis</h2>
-                                    <!-- Icon Divider-->
-                                    <div class="divider-custom">
-                                        <div class="divider-custom-line"></div>
-                                        <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
-                                        <div class="divider-custom-line"></div>
-                                    </div>
-                                    <!-- Portfolio Modal - Image-->
-                                    <img class="img-fluid rounded mb-5" src="assets/img/portfolio/animalis.png" alt="..." />
-                                    <!-- Portfolio Modal - Text-->
-                                    <p class="mb-4">Application web au profit de la société Animalis basée au Togo, développée en MERN Stack, cette application contient une interface d'administration pour la gestion du contenu (produits et utilisateurs) avec une inscription confirmée par mail </p>
-                                    <a class="btn btn-primary" href="https://mehdysaadi1990.github.io/animalis/">
-                                        <i class="fas fa-solid fa-window-maximize"></i>
-                                        Accès GitHub
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- Portfolio Modal 2-->
-        <div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" aria-labelledby="portfolioModal2" aria-hidden="true">
-            <div class="modal-dialog modal-xl">
-                <div class="modal-content">
-                    <div class="modal-header border-0"><button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button></div>
-                    <div class="modal-body text-center pb-5">
-                        <div class="container">
-                            <div class="row justify-content-center">
-                                <div class="col-lg-8">
-                                    <!-- Portfolio Modal - Title-->
-                                    <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">LUMILED</h2>
-                                    <!-- Icon Divider-->
-                                    <div class="divider-custom">
-                                        <div class="divider-custom-line"></div>
-                                        <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
-                                        <div class="divider-custom-line"></div>
-                                    </div>
-                                    <!-- Portfolio Modal - Image-->
-                                    <img class="img-fluid rounded mb-5" src="assets/img/portfolio/lumiled.png" alt="..." />
-                                    <!-- Portfolio Modal - Text-->
-                                    <p class="mb-4">Site développé pour l'entreprise LUMILED dont je suis le fondateur, en cours de construction, le coté front avec React et le back avec NodeJS et Express avec une gestion des bases de données MySQL. Fonctionnalité de gestion des produits et utilisateurs avec téléchargement des fiches techniques pour chaque produit</p>
-                                     <a class="btn btn-primary" href="https://mehdysaadi1990.github.io/lumiled/">
-                                        <i class="fas fa-solid fa-window-maximize"></i>
-                                        Accès GitHub
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- Portfolio Modal 3-->
-        <div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" aria-labelledby="portfolioModal3" aria-hidden="true">
-            <div class="modal-dialog modal-xl">
-                <div class="modal-content">
-                    <div class="modal-header border-0"><button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button></div>
-                    <div class="modal-body text-center pb-5">
-                        <div class="container">
-                            <div class="row justify-content-center">
-                                <div class="col-lg-8">
-                                    <!-- Portfolio Modal - Title-->
-                                    <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">Bey</h2>
-                                    <!-- Icon Divider-->
-                                    <div class="divider-custom">
-                                        <div class="divider-custom-line"></div>
-                                        <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
-                                        <div class="divider-custom-line"></div>
-                                    </div>
-                                    <!-- Portfolio Modal - Image-->
-                                    <img class="img-fluid rounded mb-5" src="assets/img/portfolio/bey.png" alt="..." />
-                                    <!-- Portfolio Modal - Text-->
-                                    <p class="mb-4">Site développé avec Bootstrap au profit de la société Bey spécialisé dans l'acquisition de biens immobilier à Paris et à Dubai avec une fonctionnalité de contact et de prise de rendez-vous</p>
-                                    <a class="btn btn-primary" href="https://mehdysaadi1990.github.io/bey/">
-                                        <i class="fas fa-solid fa-window-maximize"></i>
-                                        Accès GitHub
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- Portfolio Modal 4-->
-        <div class="portfolio-modal modal fade" id="portfolioModal4" tabindex="-1" aria-labelledby="portfolioModal4" aria-hidden="true">
-            <div class="modal-dialog modal-xl">
-                <div class="modal-content">
-                    <div class="modal-header border-0"><button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button></div>
-                    <div class="modal-body text-center pb-5">
-                        <div class="container">
-                            <div class="row justify-content-center">
-                                <div class="col-lg-8">
-                                    <!-- Portfolio Modal - Title-->
-                                    <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">AppBudget</h2>
-                                    <!-- Icon Divider-->
-                                    <div class="divider-custom">
-                                        <div class="divider-custom-line"></div>
-                                        <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
-                                        <div class="divider-custom-line"></div>
-                                    </div>
-                                    <!-- Portfolio Modal - Image-->
-                                    <img class="img-fluid rounded mb-5" src="assets/img/portfolio/appBudget.png" alt="..." />
-                                    <!-- Portfolio Modal - Text-->
-                                    <p class="mb-4">Application de gestion de budget avec Dashboard réalisé avec Electron JS. Les bases de données sont gérées avec MongoDB</p>
-                                    <a class="btn btn-primary" href="#">
-                                        <i class="fas fa-solid fa-window-maximize"></i>
-                                        Accès GitHub
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- Portfolio Modal 5-->
-        <div class="portfolio-modal modal fade" id="portfolioModal5" tabindex="-1" aria-labelledby="portfolioModal5" aria-hidden="true">
-            <div class="modal-dialog modal-xl">
-                <div class="modal-content">
-                    <div class="modal-header border-0"><button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button></div>
-                    <div class="modal-body text-center pb-5">
-                        <div class="container">
-                            <div class="row justify-content-center">
-                                <div class="col-lg-8">
-                                    <!-- Portfolio Modal - Title-->
-                                    <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">GestApp</h2>
-                                    <!-- Icon Divider-->
-                                    <div class="divider-custom">
-                                        <div class="divider-custom-line"></div>
-                                        <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
-                                        <div class="divider-custom-line"></div>
-                                    </div>
-                                    <!-- Portfolio Modal - Image-->
-                                    <img class="img-fluid rounded mb-5" src="assets/img/portfolio/gestApp.png" alt="..." />
-                                    <!-- Portfolio Modal - Text-->
-                                    <p class="mb-4">Application de gestion de stock, facturation (achat et vente) avec gestion de budget développée en ElectronJS et la gestion des bases de données avec MongoDB</p>
-                                    <a class="btn btn-primary" href="#">
-                                        <i class="fas fa-solid fa-window-maximize"></i>
-                                        Accès GitHub
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- Portfolio Modal 6-->
-        <div class="portfolio-modal modal fade" id="portfolioModal6" tabindex="-1" aria-labelledby="portfolioModal6" aria-hidden="true">
-            <div class="modal-dialog modal-xl">
-                <div class="modal-content">
-                    <div class="modal-header border-0"><button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button></div>
-                    <div class="modal-body text-center pb-5">
-                        <div class="container">
-                            <div class="row justify-content-center">
-                                <div class="col-lg-8">
-                                    <!-- Portfolio Modal - Title-->
-                                    <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">Booki</h2>
-                                    <!-- Icon Divider-->
-                                    <div class="divider-custom">
-                                        <div class="divider-custom-line"></div>
-                                        <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
-                                        <div class="divider-custom-line"></div>
-                                    </div>
-                                    <!-- Portfolio Modal - Image-->
-                                    <img class="img-fluid rounded mb-5" src="assets/img/portfolio/Booki.png" alt="..." />
-                                    <!-- Portfolio Modal - Text-->
-                                    <p class="mb-4">Projet formation Openclassrooms, intégration de la maquette de réservation d'hotel Booki en HTML et CSS</p>
-                                    <a class="btn btn-primary" href="https://mehdysaadi1990.github.io/Booki/">
-                                        <i class="fas fa-solid fa-window-maximize"></i>
-                                        Accès GitHub
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- Portfolio Modal 7-->
-        <div class="portfolio-modal modal fade" id="portfolioModal7" tabindex="-1" aria-labelledby="portfolioModal7" aria-hidden="true">
-            <div class="modal-dialog modal-xl">
-                <div class="modal-content">
-                    <div class="modal-header border-0"><button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button></div>
-                    <div class="modal-body text-center pb-5">
-                        <div class="container">
-                            <div class="row justify-content-center">
-                                <div class="col-lg-8">
-                                    <!-- Portfolio Modal - Title-->
-                                    <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">OhMyFood</h2>
-                                    <!-- Icon Divider-->
-                                    <div class="divider-custom">
-                                        <div class="divider-custom-line"></div>
-                                        <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
-                                        <div class="divider-custom-line"></div>
-                                    </div>
-                                    <!-- Portfolio Modal - Image-->
-                                    <img class="img-fluid rounded mb-5" src="assets/img/portfolio/OhmyFood.png" alt="..." />
-                                    <!-- Portfolio Modal - Text-->
-                                    <p class="mb-4">Projet formation Openclassrooms, intégration de la maquette de réservation de restaurant OhMyFood en HTML et CSS avec utilisation du SCSS et mise en place d'animation CSS</p>
-                                    <a class="btn btn-primary" href="https://mehdysaadi1990.github.io/Ohmyfood/">
-                                        <i class="fas fa-solid fa-window-maximize"></i>
-                                        Accès GitHub
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- Portfolio Modal 8-->
-         <div class="portfolio-modal modal fade" id="portfolioModal8" tabindex="-1" aria-labelledby="portfolioModal8" aria-hidden="true">
-            <div class="modal-dialog modal-xl">
-                <div class="modal-content">
-                    <div class="modal-header border-0"><button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button></div>
-                    <div class="modal-body text-center pb-5">
-                        <div class="container">
-                            <div class="row justify-content-center">
-                                <div class="col-lg-8">
-                                    <!-- Portfolio Modal - Title-->
-                                    <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">La Panthère</h2>
-                                    <!-- Icon Divider-->
-                                    <div class="divider-custom">
-                                        <div class="divider-custom-line"></div>
-                                        <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
-                                        <div class="divider-custom-line"></div>
-                                    </div>
-                                    <!-- Portfolio Modal - Image-->
-                                    <img class="img-fluid rounded mb-5" src="assets/img/portfolio/LaPanthere.png" alt="..." />
-                                    <!-- Portfolio Modal - Text-->
-                                    <p class="mb-4">Projet formation Openclassrooms, refonte du site Web La Panthère afin d'optimiser le référencement naturel (SEO)</p>
-                                   <a class="btn btn-primary" href="https://mehdysaadi1990.github.io/La-Panthere/">
-                                        <i class="fas fa-solid fa-window-maximize"></i>
-                                        Accès GitHub
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- Portfolio Modal 9-->
-         <div class="portfolio-modal modal fade" id="portfolioModal9" tabindex="-1" aria-labelledby="portfolioModal9" aria-hidden="true">
-            <div class="modal-dialog modal-xl">
-                <div class="modal-content">
-                    <div class="modal-header border-0"><button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button></div>
-                    <div class="modal-body text-center pb-5">
-                        <div class="container">
-                            <div class="row justify-content-center">
-                                <div class="col-lg-8">
-                                    <!-- Portfolio Modal - Title-->
-                                    <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">Kanap</h2>
-                                    <!-- Icon Divider-->
-                                    <div class="divider-custom">
-                                        <div class="divider-custom-line"></div>
-                                        <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
-                                        <div class="divider-custom-line"></div>
-                                    </div>
-                                    <!-- Portfolio Modal - Image-->
-                                    <img class="img-fluid rounded mb-5" src="assets/img/portfolio/kanap.png" alt="..." />
-                                    <!-- Portfolio Modal - Text-->
-                                    <p class="mb-4">Projet formation Openclassrooms, intégration du Javascript dans la construction du site Kanap afin de le rendre interactif et intégrer les différentes fonctionnalité coté front-end</p>
-                                    <a class="btn btn-primary" href="https://mehdysaadi1990.github.io/Kanap/">
-                                        <i class="fas fa-solid fa-window-maximize"></i>
-                                        Accès GitHub
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- Portfolio Modal 10-->
-         <div class="portfolio-modal modal fade" id="portfolioModal10" tabindex="-1" aria-labelledby="portfolioModal10" aria-hidden="true">
-            <div class="modal-dialog modal-xl">
-                <div class="modal-content">
-                    <div class="modal-header border-0"><button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button></div>
-                    <div class="modal-body text-center pb-5">
-                        <div class="container">
-                            <div class="row justify-content-center">
-                                <div class="col-lg-8">
-                                    <!-- Portfolio Modal - Title-->
-                                    <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">Piiquante</h2>
-                                    <!-- Icon Divider-->
-                                    <div class="divider-custom">
-                                        <div class="divider-custom-line"></div>
-                                        <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
-                                        <div class="divider-custom-line"></div>
-                                    </div>
-                                    <!-- Portfolio Modal - Image-->
-                                    <img class="img-fluid rounded mb-5" src="assets/img/portfolio/Piiquante.png" alt="..." />
-                                    <!-- Portfolio Modal - Text-->
-                                    <p class="mb-4">Projet formation Openclassrooms, intégration des fonctionnalités back-end (authentification, gestion des fichiers, gestion des données produits et utilisateurs) du site de création et notation de sauce Piiquante avec NodeJS, Express et MongoDB</p>
-                                    <a class="btn btn-primary" href="https://mehdysaadi1990.github.io/Piiquante/">
-                                        <i class="fas fa-solid fa-window-maximize"></i>
-                                        Accès GitHub
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- Portfolio Modal 11-->
-         <div class="portfolio-modal modal fade" id="portfolioModal11" tabindex="-1" aria-labelledby="portfolioModal11" aria-hidden="true">
-            <div class="modal-dialog modal-xl">
-                <div class="modal-content">
-                    <div class="modal-header border-0"><button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button></div>
-                    <div class="modal-body text-center pb-5">
-                        <div class="container">
-                            <div class="row justify-content-center">
-                                <div class="col-lg-8">
-                                    <!-- Portfolio Modal - Title-->
-                                    <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">Kasa</h2>
-                                    <!-- Icon Divider-->
-                                    <div class="divider-custom">
-                                        <div class="divider-custom-line"></div>
-                                        <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
-                                        <div class="divider-custom-line"></div>
-                                    </div>
-                                    <!-- Portfolio Modal - Image-->
-                                    <img class="img-fluid rounded mb-5" src="assets/img/portfolio/kasa.png" alt="..." />
-                                    <!-- Portfolio Modal - Text-->
-                                    <p class="mb-4">Projet formation Openclassrooms, intégration de la maquette Kasa de visite virtuelle et description d'appartements avec le framework React, utilisations des differents outils react (React-router, Gestion des états, Gestion des Hooks)</p>
-                                    <a class="btn btn-primary" href="https://mehdysaadi1990.github.io/kasa/">
-                                        <i class="fas fa-solid fa-window-maximize"></i>
-                                        Accès GitHub
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- Bootstrap core JS-->
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
-        <!-- Core theme JS-->
-        <script src="js/scripts.js"></script>
-        <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
-        <!-- * *                               SB Forms JS                               * *-->
-        <!-- * * Activate your form at https://startbootstrap.com/solution/contact-forms * *-->
-        <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
-        <!-- <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>-->
-    </body>
+      </div>
+    </section>
+
+    <section class="section" id="about">
+      <div>
+        <h2>À propos de moi</h2>
+        <p class="subtitle">Passionné par le JavaScript et les interfaces immersives, je transforme les idées en pages web performantes. J'aime intégrer des animations subtiles et une expérience utilisateur fluide à chaque site que je développe.</p>
+      </div>
+      <div class="grid-3">
+        <article class="card">
+          <strong>JavaScript</strong>
+          <p>Expérience avec ES6+, DOM, fetch, animations CSS/JS et frameworks modernes.</p>
+        </article>
+        <article class="card">
+          <strong>Design moderne</strong>
+          <p>Création de pages responsive avec un style épuré, un bon contraste et une mise en page claire.</p>
+        </article>
+        <article class="card">
+          <strong>Performance</strong>
+          <p>Optimisation des animations, chargement rapide et expérience fluide sur mobile et desktop.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section" id="skills">
+      <div>
+        <h2>Compétences</h2>
+        <p class="subtitle">Tech stack dédiée aux expériences web modernes et aux animations interactives.</p>
+      </div>
+      <div class="skills-list">
+        <div class="skill-pill"><i class="fa-brands fa-html5" style="font-size:xx-large;color:#E34F26;"></i>HTML</div>
+        <div class="skill-pill"><i class="fa-brands fa-css3-alt" style="font-size:xx-large;color:blue"></i>CSS</div>
+        <div class="skill-pill"><i class="fa-brands fa-square-js" style="font-size:xx-large;color: gold;"></i>Javascript</div>
+        <div class="skill-pill">Responsive Design</div>
+        <div class="skill-pill"><i class="fa-brands fa-sass" style="font-size:xx-large;color: #FFFFFF;"></i>Saas/SCSS</div>
+        <div class="skill-pill"><i class="fa-brands fa-bootstrap" style="font-size:xx-large;color: #7952B3;"></i>Bootstrap</div>
+        <div class="skill-pill"><i class="fa-brands fa-react" style="font-size:xx-large;color: #61DAFB;"></i>React JS</div>
+        <div class="skill-pill"><img class="skill-logo" src="/assets/img/portfolio/logo.svg" alt="">Electron JS</div>
+        <div class="skill-pill">UI/UX</div>
+        <div class="skill-pill"><img class="skill-logo" src="/assets/img/portfolio/mongodb-logo.svg" alt="">Mongo DB</div>
+        <div class="skill-pill"><img class="skill-logo" src="/assets/img/portfolio/mysql-logo.svg" alt="">MySQL</div>
+        <div class="skill-pill"><img class="skill-logo" src="/assets/img/portfolio/sqlite-logo.svg" alt="">SQLite</div>
+        <div class="skill-pill"><i class="fa-brands fa-github" style="font-size:xx-large;color: #FFFFFF;"></i>Git / GitHub</div>
+      </div>
+    </section>
+
+    <section class="section" id="projects">
+      <div>
+        <h2>Projets récents</h2>
+        <p class="subtitle">Exemples de projets développés Full Stack</p>
+      </div>
+      <div class="projects-grid">
+        <a class="link-website" href="https://mehdysaadi1990.github.io/animalis/">
+        <article class="card project-card">
+          <img class="project-image" src="/assets/img/portfolio/animalis.png" alt="Capture projet landing page" />
+          <strong>ANIMALIS</strong>
+          <p>Application web au profit de la société Animalis basée au Togo, développée en MERN Stack, cette application contient une interface d'administration pour la gestion du contenu (produits et utilisateurs) avec une inscription confirmée par mail.</p>
+          <div class="project-tag">
+            <span>React</span>
+            <span>Node JS / Express</span>
+            <span>Mongo DB</span>
+          </div>
+        </article>
+        </a>
+        <a class="link-website" href="https://mehdysaadi1990.github.io/lumiled/">
+        <article class="card project-card">
+          <img class="project-image" src="/assets/img/portfolio/lumiled.png" alt="Capture projet portfolio interactif" />
+          <strong>LUMIN'ART</strong>
+          <p>Site développé pour l'entreprise LUMILED, en cours de constructionet développé en MySQLERN Stack. Fonctionnalité de gestion des produits et utilisateurs avec téléchargement des fiches techniques pour chaque produit.</p>
+          <div class="project-tag">
+            <span>React</span>
+            <span>Node JS / Express</span>
+            <span>MySQL</span>
+          </div>
+        </article>
+        </a>
+        <a class="link-website" href="https://mehdysaadi1990.github.io/bey/">
+        <article class="card project-card invisible to-display">
+          <img class="project-image" src="/assets/img/portfolio/bey.png" alt="Capture projet portfolio interactif" />
+          <strong>BEY</strong>
+          <p>Site développé avec Bootstrap au profit de la société Bey spécialisé dans l'acquisition de biens immobilier à Paris et à Dubai avec une fonctionnalité de contact et de prise de rendez-vous.</p>
+          <div class="project-tag">
+            <span>Bootstrap</span>
+            <span>JavaScript</span>
+            <span>Node JS / Express</span>
+          </div>
+        </article>
+        </a>
+        <a class="link-website" href="https://github.com/MehdySaadi1990/gestApp">
+        <article class="card project-card invisible to-display">
+          <img class="project-image" src="/assets/img/portfolio/gestApp.png" alt="Capture projet portfolio interactif" />
+          <strong>GESTAPP</strong>
+          <p>Application de gestion de stock, facturation (achat et vente) avec gestion de budget développée en ElectronJS et la gestion des bases de données avec MongoDB.</p>
+          <div class="project-tag">
+            <span>Electron JS</span>
+            <span>Bootstrap</span>
+            <span>Node JS / Express</span>
+            <span>Mongo DB</span>
+          </div>
+        </article>
+        </a>
+          <button id="seeMore" class="btn primary center">Voir plus</button>
+      </div>
+      <div>
+        <h2>Projets d'apprentissage</h2>
+          <p class="subtitle">Projets développés au cours de ma formation avec Openclassrooms abordant l'ensemble du dévelopement d'une application</p>
+      </div>
+      <div class="projects-grid">
+        <a class="link-website" href="https://mehdysaadi1990.github.io/kasa/">
+        <article class="card project-card">
+          <img class="project-image" src="/assets/img/portfolio/kasa.png" alt="Capture projet landing page" />
+          <strong>KASA</strong>
+          <p>Projet formation Openclassrooms, intégration de la maquette Kasa de visite virtuelle et description d'appartements avec le framework React, utilisations des differents outils react (React-router, Gestion des états, Gestion des Hooks).</p>
+          <div class="project-tag">
+            <span>React JS</span>
+            <span>Figma</span>
+            <span>Javascript</span>
+          </div>
+        </article>
+        </a>
+        <a class="link-website" href="https://mehdysaadi1990.github.io/Piiquante/">
+        <article class="card project-card">
+          <img class="project-image" src="/assets/img/portfolio/Piiquante.png" alt="Capture projet landing page" />
+          <strong>PIIQUANTE</strong>
+          <p>Projet formation Openclassrooms, intégration des fonctionnalités back-end (authentification, gestion des fichiers, gestion des données produits et utilisateurs) du site de création et notation de sauce Piiquante avec NodeJS, Express et MongoDB.</p>
+          <div class="project-tag">
+            <span>Node JS / Express</span>
+            <span>Mongo DB</span>
+          </div>
+        </article>
+        </a>
+        <a class="link-website" href="https://mehdysaadi1990.github.io/Kanap/">
+        <article class="card project-card invisible2 to-display2">
+          <img class="project-image" src="/assets/img/portfolio/kanap.png" alt="Capture projet landing page" />
+          <strong>KANAP</strong>
+          <p>Projet formation Openclassrooms, intégration du Javascript dans la construction du site Kanap afin de le rendre interactif et intégrer les différentes fonctionnalité coté front-end.</p>
+          <div class="project-tag">
+            <span>HTML</span>
+            <span>CSS</span>
+            <span>JS</span>
+          </div>
+        </article>
+        </a>
+        <a class="link-website" href="https://mehdysaadi1990.github.io/La-Panthere/">
+        <article class="card project-card invisible2 to-display2">
+          <img class="project-image" src="/assets/img/portfolio/LaPanthere.png" alt="Capture projet landing page" />
+          <strong>LA PANTHERE</strong>
+          <p>Projet formation Openclassrooms, audit et refonte du site Web La Panthère afin d'optimiser le référencement naturel (SEO), les performances et l'accessibilité.</p>
+          <div class="project-tag">
+            <span>Bootstrap</span>
+            <span>Lighthouse</span>
+            <span>Inspecteur Google</span>
+            <span>Google analytics</span>
+          </div>
+        </article>
+        </a>
+        <a class="link-website" href="https://mehdysaadi1990.github.io/Ohmyfood/">
+        <article class="card project-card invisible2 to-display2">
+          <img class="project-image" src="/assets/img/portfolio/OhmyFood.png" alt="Capture projet landing page" />
+          <strong>OH MY FOOD</strong>
+          <p>Projet formation Openclassrooms, intégration de la maquette de réservation de restaurant OhMyFood en HTML et CSS avec utilisation du SCSS et mise en place d'animation CSS.</p>
+          <div class="project-tag">
+            <span>HTML</span>
+            <span>CSS / SCSS</span>
+          </div>
+        </article>
+        </a>
+        <a class="link-website" href="https://mehdysaadi1990.github.io/Booki/">
+        <article class="card project-card invisible2 to-display2">
+          <img class="project-image" src="/assets/img/portfolio/Booki.png" alt="Capture projet landing page" />
+          <strong>BOOKI</strong>
+          <p>Projet formation Openclassrooms, intégration de la maquette de réservation d'hotel Booki en HTML et CSS de manière responsive avec des contraintes techniques.</p>
+          <div class="project-tag">
+            <span>HTML</span>
+            <span>CSS</span>
+            <span>JS</span>
+          </div>
+        </article>
+        </a>
+        <button id="seeMore2" class="btn primary center">Voir plus</button>
+      </div>
+    </section>
+
+    <section class="section" id="contact">
+      <div>
+        <h2>Contact</h2>
+        <p class="subtitle">Prêt à collaborer sur un site, une application ou une interface web moderne, envie d'en savoir plus sur mon parcours et qui suis-je ? Retrouvez toutes les informations me concernant dans les rubriques suivantes : </p>
+      </div>
+      <div class="contact-grid">
+        <article class="contact-card">
+          <h3>Mon CV</h3>
+          <p>Téléchargeable directement en cliquant <a href="/assets/cv/CV_MEHDY_SAADI-OP.pdf" download="CV_MEHDY_SAADI-OP.pdf">ici <i class="fa-solid fa-file"></i></a></p>
+        </article>
+        <article class="contact-card">
+          <h3>Contactez-moi</h3>
+          <p>Je suis disponible pour des projets freelances ou des collaborations sur des sites vitrines et des applications front-end.</p>
+          <p>Email : <a href="mailto:mehdy.saadi.dk@gmail.com">mehdy.saadi.dk@gmail.com</a></p>
+          <p>Télephone : 07 58 34 77 76</p>
+        </article>
+        <article class="contact-card">
+          <h3>Réseaux</h3>
+          <p>Suivez mes publications, partagez vos idées et discutons d'un projet.</p>
+          <p><a href="https://www.linkedin.com/in/mehdy-saadi-a87724177/">LinkedIn <i class="fa-brands fa-linkedin"></i></a> · <a href="https://github.com/MehdySaadi1990?tab=repositories">GitHub <i class="fa-brands fa-square-github"></i></a> · <a href="https://www.facebook.com/mehdy.saadi.2025?locale=fr_FR">Facebook <i class="fa-brands fa-square-facebook"></i></a></p>
+        </article>
+      </div>
+    </section>
+
+    <footer class="section" style="text-align:center; padding:20px 24px; margin-bottom:0;">
+      <p>© 2026 Portfolio Développeur Web · Conçu avec JavaScript</p>
+    </footer>
+  </main>
+
+  <script src="script.js"></script>
+</body>
 </html>
